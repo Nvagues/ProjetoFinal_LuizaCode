@@ -3,9 +3,35 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
-def teste():
-    return "Essas são minhas tintas"
+@app.get("/api/produtos/{codigo}")
+def pesquisar_produto_pelo_codigo(codigo: str):
+    print("Pesquisar produto pelo codigo", codigo)
+    return {
+        "codigo": codigo,
+        "nome": "Nome tinta",
+        "descrição": "Características da tinta",
+        "preço venda": "Preço da tinta",
+        "estoque": "Quantidade de produto no estoque",
+        "cor": "Cor da tinta",
+        "Tamanho da lata": "Tamanho em litros",
+        "Marca": "Fabricante da tinta",
+        "Uso": "para que serve a tinta"
+    }
+    
+@app.get("/api/produtos/{nome}")
+def pesquisar_produto_pelo_nome(nome: str):
+    print("Pesquisar produto pelo nome", nome)
+    return {
+        "codigo": "codigo",
+        "nome": nome,
+        "descrição": "Características da tinta",
+        "preço venda": "Preço da tinta",
+        "estoque": "Quantidade de produto no estoque",
+        "cor": "Cor da tinta",
+        "Tamanho da lata": "Tamanho em litros",
+        "Marca": "Fabricante da tinta",
+        "Uso": "para que serve a tinta"
+    }
 
 
 #Tem que passar esse esquema pros models ou pros esquemas futuramente
