@@ -1,5 +1,4 @@
-from math import prod
-import os
+import asyncio
 from cruds.product import create_product, get_products
 from server.database import connection_db
 from dotenv import load_dotenv
@@ -8,22 +7,24 @@ load_dotenv()
 # Conecta com o banco
 connection_db()
 
-# Cria produto
 
-pr = {
-    "nome":"Teste",
-    "marca": "Suvinil",
-    "cor":"Azul",
-    "preco":150.00,
-    "externa_ou_interna":"interna",  
+
+async def main():
+    # Cria produto
+     pr = {
+        "nome":"Teste",
+        "marca": "Suvinil",
+        "cor":"Azul",
+        "preco":150.00,
+        "externa_ou_interna":"interna",  
      
-}
+    }
 
-#produto = create_product(pr)
-async def buscar_produto():
-    products = get_products()
-    products = await products.to_list(length=10)  
-    print(products)
+    # busca de produto
+    product = await create_product(pr)
+    
+    produtos = await get_products()
+    print(produtos)
 
-buscar_produto()
 
+asyncio.run(main()) 

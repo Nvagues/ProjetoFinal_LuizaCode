@@ -17,9 +17,9 @@ database = DataBase()
 def connection_db():
     database.connect = AsyncIOMotorClient(os.environ["DATABASE"])
 
-    database.product_db = database.connect.ProjetoFinal.product
-    database.order_items_db = database.connect.ProjetoFinal.order_items
-    database.cart_db = database.connect.ProjetoFinal.cart
+    database.product_db = database.connect.Cluster0.product
+    database.order_items_db = database.connect.Cluster0.order_items
+    database.cart_db = database.connect.Cluster0.cart
 
 
 def connection_close():
