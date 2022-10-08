@@ -1,5 +1,6 @@
+from math import prod
 import os
-from cruds.product import create_product
+from cruds.product import create_product, get_products
 from server.database import connection_db
 from dotenv import load_dotenv
 load_dotenv()
@@ -18,4 +19,11 @@ pr = {
      
 }
 
-produto = create_product(pr)
+#produto = create_product(pr)
+async def buscar_produto():
+    products = get_products()
+    products = await products.to_list(length=10)  
+    print(products)
+
+buscar_produto()
+
