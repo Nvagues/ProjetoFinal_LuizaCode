@@ -11,7 +11,7 @@ connection_db()
 
 async def main():
     # Cria produto
-     pr = {
+    pr = {
         "nome":"Teste",
         "marca": "Suvinil",
         "cor":"Azul",
@@ -21,7 +21,7 @@ async def main():
     }
 
     # busca de produto
-    product = await create_product(pr)
+    #product = await create_product(pr)
     
     produtos = await get_products()
     print(produtos)

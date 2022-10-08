@@ -1,2 +1,4 @@
 motor
 pydantic
+python-dotenv
+pymongo[srv]
