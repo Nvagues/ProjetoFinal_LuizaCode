@@ -16,4 +16,3 @@ starlette==0.20.4
 typing_extensions==4.3.0
 urllib3==1.26.12
 uvicorn==0.18.3
-(venv) TERRA:Proje
