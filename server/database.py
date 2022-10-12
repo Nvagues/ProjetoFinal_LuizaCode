@@ -1,12 +1,14 @@
 from motor.motor_asyncio import AsyncIOMotorClient
-import settings
+import os
+from dotenv import load_dotenv
 
 
 class DataBase():
     connect: AsyncIOMotorClient = None
     product_db = None
     users_collection = None 
-    address_collection = None 
+    address_collection = None order_items_db = None
+    cart_db = None
     
 database = DataBase()
 
@@ -20,3 +22,7 @@ async def connection_db():
     
 async def connection_close():
     database.connect.close()
+
+    
+connection_db()
+
