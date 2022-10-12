@@ -60,5 +60,5 @@ async def root(usuario: Usuario):
     return {"message": "Vamos criar sua conta!"}
 
 @app.get('/email-usuario')
-async def root(usuario:buscar_dados_pelo_email): 
+async def root(usuario:Usuario): 
     return(f'{Usuario + Endereco}')
