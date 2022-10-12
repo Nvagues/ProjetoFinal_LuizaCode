@@ -7,8 +7,6 @@ load_dotenv()
 # Conecta com o banco
 connection_db()
 
-
-
 async def main():
     # Cria produto
     pr = {
@@ -25,6 +23,5 @@ async def main():
     
     produtos = await get_products()
     print(produtos)
-
 
 asyncio.run(main()) 
