@@ -26,4 +26,3 @@ async def connection_close():
 
     
 connection_db()
-
