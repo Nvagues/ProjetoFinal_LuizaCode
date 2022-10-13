@@ -27,6 +27,7 @@ pip install -r requirements.txt
 
 Python, FastAPI, Uvicorn, Motor Asyncio e MongoDB
 
+
 ### 📌 O que é possível fazer nessa aplicação?
 
 * Cadastrar clientes;
@@ -40,10 +41,4 @@ Python, FastAPI, Uvicorn, Motor Asyncio e MongoDB
 * Criar um carrinho de compras;
 * Alterar a quantidade de itens do carrinho;
 * Consultar carrinho de compra.
-
-
-
-
-
-
 
