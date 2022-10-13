@@ -42,3 +42,4 @@ Python, FastAPI, Uvicorn, Motor Asyncio e MongoDB
 * Alterar a quantidade de itens do carrinho;
 * Consultar carrinho de compra.
 
+⌨️ Obrigada por chegar até aqui! ❤️😊
