@@ -27,7 +27,3 @@ pip install -r requirements.txt
 
 Python, FastAPI, Uvicorn, Motor Asyncio e MongoDB
 
-
-
-
-
