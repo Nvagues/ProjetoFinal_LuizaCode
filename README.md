@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 
 
-## 🛠️ Esse projeto usou as seguintes tecnologias: 
+###🛠️ Esse projeto usou as seguintes tecnologias: 
 
 Python, FastAPI, Uvicorn, Motor Asyncio e MongoDB
 
